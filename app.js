@@ -58,7 +58,9 @@ function displayStats() {
 }
 
 function displayCatchphrases() {
+    catchphrasesEl.textContent = '';
     for (let catchphrase of catchphrases) {
+        
         const p = document.createElement('p');
 
         p.classList.add('catchphrase');
