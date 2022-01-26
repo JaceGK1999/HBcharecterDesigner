@@ -2,11 +2,11 @@ import { createStatsString } from './utils.js';
 
 
 const headDropdown = document.getElementById('head-dropdown');
-// const middleDropdown = document.getElementById('middle-dropdown');
-// const bottomDropdown = document.getElementById('bottom-dropdown');
+const middleDropdown = document.getElementById('middle-dropdown');
+const bottomDropdown = document.getElementById('bottom-dropdown');
 const headEl = document.getElementById('head');
 const middleEl = document.getElementById('middle');
-// const bottomEl = document.getElementById('bottom');
+const bottomEl = document.getElementById('bottom');
 const reportEl = document.getElementById('report');
 const catchphrasesEl = document.getElementById('catchphrases');
 const catchphraseInput = document.getElementById('catchphrase-input');
@@ -36,13 +36,13 @@ middleDropdown.addEventListener('change', () => {
 });
 
 
-// bottomDropdown.addEventListener('change', () => {
-//     const value = bottomDropdown.value;
+bottomDropdown.addEventListener('change', () => {
+    const value = bottomDropdown.value;
 
-//     bottomCount++;
-//     bottomEl.style.backgroundImage = `url("./assets/${value}-pants.png")`;
-//     displayStats();
-// });
+    bottomCount++;
+    bottomEl.style.backgroundImage = `url("./assets/${value}-pants.png")`;
+    displayStats();
+});
 
 catchphraseButton.addEventListener('click', () => {
     
